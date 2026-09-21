@@ -1,0 +1,323 @@
+/*GLOBAL RESET*/
+* {
+    text-decoration: none;
+    /* Removes underlines from all links globally */
+    font-family: calibri, sans-serif;
+    /* Sets the default font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding/borders don't add to the total width */
+}
+
+a {
+    /* to remove all the decoration on link text */
+    text-decoration: none;
+    color: black;
+}
+
+body {
+
+    min-height: 100vh;
+    /* Ensures body is at least height of screen */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+
+
+li a img {
+    height: 20px;
+    width: auto;
+}
+
+
+/* MAIN CONTENT AREA*/
+main {
+    padding: 2rem;
+    flex: 1;
+    /* Pushes footer down */
+}
+
+
+.btn-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-cart:hover {
+    background-color: #999999;
+}
+
+/*APPRECIATION SECTION*/
+.appreciation {
+    padding: 80px 20px;
+    margin-top: 60px;
+}
+
+.appreciation-text {
+    color: black;
+}
+
+.appreciation-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.appreciation-img img {
+    height: 120px;
+    width: auto;
+}
+
+        /* Footer Styles */
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 0;
+        }
+
+        footer {
+            background: #ffffff;
+            color: #000000;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 50px 20px 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            color: #000000;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 8px;
+        }
+
+        .footer-section a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #fff;
+        }
+
+        .FooterBottom {
+            border-top: 1px solid #000000;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .FooterBottom p {
+            margin-bottom: 10px;
+        }
+
+        .Policy ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .Policy li {
+            display: inline-block;
+        }
+
+        .Policy a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .Policy a:hover {
+            color: #fff;
+        }
+/*LOGIN PAGE STYLES*/
+
+/*Container to center the login form on screen */
+.login-page-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    /* Centers the box */
+}
+
+/* Styling the Login/Register Cards */
+.login-box,
+.admin-login-box,
+.register-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /*shadow*/
+    border: 1px solid #eee;
+    width: 100%;
+    color: black;
+    /* Ensure text is black */
+}
+
+/* Headings */
+.login-box h2,
+.admin-login-box h2,
+.register-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #111;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    /*the color fades smoothly from grey to black*/
+    background-color: #fafafa;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #000;
+    background-color: #fff;
+}
+
+/* Buttons */
+.form-buttons {
+    margin-top: 30px;
+}
+
+.btn-login,
+.btn-register {
+    background-color: #111;
+    color: #fff;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    /*switch the color when hover the button*/
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background-color: #444;
+}
+
+/* Admin Button Style */
+.btn-admin-login {
+    background-color: transparent;
+    color: #111;
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #111;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-admin-login:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Hide elements */
+.hidden {
+    display: none !important;
+    /* to priotize the hidden for the login form*/
+}
+
+/* Switch Links (Toggle between forms) */
+.switch-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-link a {
+    color: #888;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.switch-link a:hover {
+    color: #000;
+}
+
+/* Create Account Section inside Login Box */
+.create-account {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.create-account h4 {
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-create {
+    display: inline-block;
+    color: #111;
+    font-weight: 600;
+    border-bottom: 2px solid #111;
+}
+
+.btn-create:hover {
+    opacity: 0.7;
+}
